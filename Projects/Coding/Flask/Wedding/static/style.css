@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: normal;
+  background: #F2E4E7;
+  color: navy;
+}
+
+@font-face {
+  font-family: fancy;
+  src: url(fancy.ttf);
+}  
+
+@font-face {
+  font-family: normal;
+  src: url(normal.otf);
+}
+
+.header {
+  text-align: center;
+  background: #F2E4E7;
+  border-style: double;
+  border-color:#4B68B8;
+  border-width: thick;
+  margin-bottom: 10px;
+}
+h1 {
+  font-family: fancy;
+  font-size: 500%;
+}
+
+h2 {
+  font-family: fancy;
+}
+.card {
+  background-color: #F2E4E7;
+  margin-top: 10px;
+  border-style: double;
+  border-color:#4B68B8;
+  border-width: thick;
+  float: center;
+  padding: 5px;
+}
+.card img{
+  width: 100%;
+  text-align: center;
+}
+.nav {
+  overflow: hidden;
+  background-color: #4B68B8;
+  padding: 5px;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.message {
+  color: white;
+  float: right;
+}
+.column {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 300px) {
+  .column.side, .column.middle {
+      width: 100%;
+ }
+}

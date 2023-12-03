@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block subtitle %}<h1>Users</h1>
+{% endblock %}
+
+{% block following %}
+{% for user in values %}
+    <h2>{{user._id}} | Name: {{user.name}} | Bio: {{user.bio}}</h2>
+{% endfor %}
+{% endblock %}

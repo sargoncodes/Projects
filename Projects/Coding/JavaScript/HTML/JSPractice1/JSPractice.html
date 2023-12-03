@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>JS Practice</title>
+</head>
+
+<body>
+
+    <div class HTMLBasics>
+
+        <h1 id="header">Header</h1>
+        <br/>
+
+        <h2 id="subtitle">Subtitle</h2>
+        <br/>
+    
+
+        <input type="text" id="inp"/>
+        <br/>
+        
+
+
+        <!-- Button functionality writtten in JSFunctions class below -->
+
+        <br/>
+        <p id="ChangeMe">Say something!</p>
+        <input type="text" id="mimic"/>
+        <button onclick="copy()">Click</button>
+        <button onclick="ResetStr()">Reset</button>
+        <br/>
+
+        <br/>
+        <p id="ClickMe">Click a button!</p>        
+        <button onclick="One()">One</button> 
+        <button onclick="Two()">Two</button>
+        <button onclick="ResetNum()">Reset</button>
+        <br/>
+        
+        <br/>
+        <p id="ChangeColor">Choose a color!</p>
+        <button onclick="Red()">Red</button> 
+        <button onclick="Blue()">Blue</button>
+        <button onclick="ResetCol()">Reset</button>
+        <br/>
+
+    </div>
+
+    <div class document>
+
+        <script type="text/javascript">
+
+            document.write("<h2>document.write</h2>");
+
+        </script>
+        <br/>
+
+        <script type="text/javascript">
+
+            document.getElementById('subtitle').innerHTML = 'getElementById.innerHTML';
+                 
+            document.getElementById('inp').value = 'getElementById.value';
+
+        </script>
+        <br/>
+
+    </div>
+
+    <div class JSFunctions>
+    
+        <div class buttonFunction>
+
+            <script type="text/javascript">
+
+                function copy() {
+                    document.getElementById('ChangeMe').innerHTML = document.getElementById("mimic").value;;
+
+                }
+
+                function ResetStr() {
+                    document.getElementById('ChangeMe').innerHTML = 'Say something!';
+                }
+
+            </script>
+
+            <script type="text/javascript">
+
+                function One(){
+                    document.getElementById('ClickMe').innerHTML="Button One clicked";
+                    console.log("Passed 1");
+                }
+
+                function Two(){
+                    document.getElementById('ClickMe').innerHTML="Button Two clicked";
+                    console.log("Passed 2");
+                }
+
+                function ResetNum(){
+                    document.getElementById('ClickMe').innerHTML="Click a button!";
+                    console.log('Passed 3');
+                }
+
+            </script>
+            <br/>
+
+            <script type="text/javascript">
+                
+                function Red(){
+                    document.getElementById('ChangeColor').style.color="red";
+                }
+
+                function Blue(){
+                    document.getElementById('ChangeColor').style.color='blue';
+                }
+
+                function ResetCol(){
+                    document.getElementById('ChangeColor').style.color='black';
+                }
+
+            </script>
+            <br/>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannon Wedding</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: fancy;
+        src: url(../static/fancy.ttf);
+      }  
+      
+      @font-face {
+        font-family: normal;
+        src: url(../static/normal.otf);
+      }
+      body {
+        font-family: normal;
+        color: navy;
+        background: #F2E4E7;
+      }
+      h1 {
+        font-family: fancy;
+        font-size: 500%;
+      }
+      
+      h2 {
+        font-family: fancy;
+      }
+      
+      
+      .header {
+        text-align: center;
+        background: #F2E4E7;
+        border-style: double;
+        border-color:#4B68B8;
+        border-width: thick;
+        margin-bottom: 10px;
+      }
+      .nav {
+        overflow: hidden;
+        background-color: #4B68B8;
+        padding: 5px;
+      }
+      .nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .message {
+        color: white;
+        float: right;
+      }
+      
+      .column {
+        float: left;
+        padding: 10px;
+        margin: 5px;
+      }
+      
+      
+      .column.side {
+        width: 24%; border-style: double; border-color:#4B68B8; border-width: thick
+      }
+      
+      
+      .column.middle {
+        padding: 5px; border-style: double; border-color:#4B68B8; border-width: thick
+      }
+      
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      @media (max-width: 600px) {
+        .column.side, .column.middle {
+          width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+
+  <div class="header">
+  
+    <h1>Brad Cannon</h1>
+    
+    <h3>and</h3>
+    
+    <h1>Jennifer Carlile</h1>
+    
+    <p>request the pleasure of your company at their wedding</p>  
+  
+</div>
+<div class="nav">
+  
+    <a href="/">Home</a>
+    <a href="/rsvp">RSVP</a>
+
+      <div class="message">
+
+        {% with messages = get_flashed_messages() %}
+
+          {% if messages %}
+
+            {% for msg in messages %}
+
+              <p>{{ msg }}<p>
+
+             {% endfor %}
+
+          {% endif %}
+
+        {% endwith %}
+
+      </div>  
+    
+</div>
+<div class="row">
+  <div class="column side">
+          <h2>Please fill out the form below</h2>
+
+        <form action="#" method="POST">
+
+          <p><input type="text" name="name" placeholder="What is your full name?"></p>
+
+          <p><input type="text" name="number" placeholder="What is your number?"></p>
+
+          <p><input type="submit" value="submit"></p>
+
+        </form>
+        
+  </div>
+  
+  <div class="column middle" style="width: 50%">
+  
+  <h2>Attendees:</h2>
+    
+    <ul>
+      {% for user in values %}
+        <li>{{user._id}}. | {{user.name}} | {{user.number}}</li>
+      {% endfor %}
+    </ul>
+  
+  </div>
+  
+  <div class="column side">
+  
+        <h2>Need to be removed?</h2>
+
+        <form action="#" method="POST">
+
+          <p><input type="number" name="index" placeholder="What number are you?"></p>
+
+          <p><input type="submit" value="submit"></p>
+
+      </form>
+  
+  </div>
+</div>
+
+
+</body>
+  
+</html>

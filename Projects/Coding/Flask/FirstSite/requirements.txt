@@ -1,0 +1,5 @@
+Flask
+Python
+HTML
+CSS
+SQL Alchemy

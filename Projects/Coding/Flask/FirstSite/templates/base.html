@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="static/styles.css">
+  <!-- This is PyScript, a method of inline python. No install needed, the CSS sheet is optional -->
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <!-- "Regular" HTML (with Flask of course) is continued below -->
+  <title>First Website</title>
+  <meta charset="UTF-8">
+</head>
+ 
+<body>
+  <div class="header">
+    <h1>Welcome to my website{{name}}!</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="/welcome">Home</a>
+    <a href="/view">Users</a>
+    <a href="/login">Update Info</a>
+    <a href="/admin">Admin</a>
+    <a href="/logout">Logout</a>
+    <a href="/deleteme">Delete Me</a>
+  </div>
+
+  <div class="whole">
+    <div class="main">
+      {% block subtitle %}{% endblock %}
+      {% block following %}{% endblock %}
+    </div>
+    <br>
+    <div class="message" >
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for msg in messages %}
+            <p>{{ msg }}</p>
+           {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
+</body>
+</html>

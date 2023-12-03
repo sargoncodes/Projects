@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
+  background-image: linear-gradient(black, green, black);
+}
+ 
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px #030303;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: green;
+  text-shadow: 2px 2px 5px black;
+  border-style: double;
+  border-color: black;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  border-style: double;
+  border-color: black;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: darkgreen;
+  color: whitesmoke;
+}
+
+body {
+  background: #ddd;
+  color: darkgreen;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.whole {
+  display: flex;
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: black;
+  height: 25cm;
+  padding: 10px;
+}
+.main {
+  color: darkgreen;
+  font-size: 20px;
+}
+.message {
+  color: whitesmoke;
+  vertical-align: right;
+  text-align: right;
+}
