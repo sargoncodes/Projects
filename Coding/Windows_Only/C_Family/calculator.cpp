@@ -16,15 +16,15 @@ float numCheck(string prompt, float number)
     {
 
         // Define first float
-        cout << prompt << "\n";
+        cout << prompt << endl;
         cin >> number;
 
         // If the input is invalid, reset the loop to redefine the variable
         if(cin.fail())
         {
-            cout << "Invalid response, try again" << "\n";
+            cout << "Invalid response, try again" << endl;
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cin.ignore(sizeof(number), '\n');
             continue;
         }
 
@@ -44,7 +44,7 @@ string opCheck(string prompt, string chosenOperator)
     {
 
         // Define first float
-        cout << prompt << "\n";
+        cout << prompt << endl;
         cin >> chosenOperator;
 
         // Move on if input is an operator
@@ -56,9 +56,9 @@ string opCheck(string prompt, string chosenOperator)
         // Retry if input is invalid
         else
         {
-            cout << "Invalid response, try again" << "\n";
+            cout << "Invalid response, try again" << endl;
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cin.ignore(sizeof(chosenOperator), '\n');
             continue;
         }
             
@@ -91,7 +91,7 @@ bool doMath(string chosenOperator, float numberOne, float numberTwo)
     }
     else
     {
-        cout << "\nCritical error in line 102, quitting..." << "\n";
+        cout << "\nCritical error in line 102, quitting..." << endl;
         return false;
     }
 
@@ -100,9 +100,7 @@ bool doMath(string chosenOperator, float numberOne, float numberTwo)
 int main()
 {
     // Introduce program
-    cout << "\nWELCOME TO THE BEST CPP CALCULATOR EVER!\n";
-    cout << "Coded by Sargon\n\n";
-
+    cout << "\nWELCOME TO THE BEST CPP CALCULATOR EVER!\n" << "Coded by Sargon\n" << endl;
 
     // Prompt for the first numbe
     numberOne = numCheck("First number: ", numberOne);

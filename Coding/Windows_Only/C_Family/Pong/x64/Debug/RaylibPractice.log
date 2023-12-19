@@ -1,0 +1,13 @@
+﻿  Application.cpp
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(20,21): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(20,14): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(44,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(44,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(150,53): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(150,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(150,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  RaylibPractice.vcxproj -> C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\x64\Debug\Pong.exe
