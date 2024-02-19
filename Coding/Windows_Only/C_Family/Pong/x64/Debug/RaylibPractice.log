@@ -1,13 +1,18 @@
 ﻿  Application.cpp
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(20,21): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(20,14): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(44,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(44,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(83,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(150,53): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(150,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(150,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(22,21): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(22,14): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(47,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(47,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(88,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(88,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(88,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(88,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(125,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(125,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(126,58): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(126,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(126,26): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(185,53): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(185,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\Application.cpp(185,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   RaylibPractice.vcxproj -> C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Pong\x64\Debug\Pong.exe

@@ -4,8 +4,10 @@
 
 using namespace std;
 
-int leftScore = 0;
-int rightScore = 0;
+int leftScore, rightScore = 0;
+
+bool db = false;
+bool title = true;
 
 class Window
 {
@@ -35,8 +37,9 @@ public:
 	float x, y;
 	float r = 15;
 
-	int ballSpeedx = 7;
-	int ballSpeedy = 7;
+	int speed = 7;
+	int ballSpeedx = speed;
+	int ballSpeedy = speed;
 
 	Color color = WHITE;
 
@@ -54,15 +57,17 @@ public:
 		y = window.height / 2;
 	}
 
-	void edgeCollisions() {
+	void edgeCollisions(Sound sound) {
 		if ((y >= (window.height - r)) || y <= r) {
 			ballSpeedy *= -1;
+			PlaySound(sound);
 		}
 	}
 
-	void paddleCollisions(Rectangle paddleRect) {
+	void paddleCollisions(Rectangle paddleRect, Sound sound) {
 		if (CheckCollisionCircleRec(Vector2{ x, y }, r, paddleRect)) {
 			ballSpeedx *= -1;
+			PlaySound(sound);
 		}
 	}
 };
@@ -99,11 +104,14 @@ int main()
 	// Initialize
 	window.initialize();
 
+	InitAudioDevice();
+
 	SetTargetFPS(60);
 
-	ball.center();
+	Sound hit_sound = LoadSound("Assets/boop.mp3");
+	Sound ding = LoadSound("Assets/ching.mp3");
 
-	bool title = true;
+	ball.center();
 
 	paddleLeft.x = 15;
 	paddleRight.x = window.width - 30;
@@ -129,34 +137,43 @@ int main()
 		}
 
 		// Update
-		ball.edgeCollisions();
-		ball.paddleCollisions(paddleLeft.getRectangle());
-		ball.paddleCollisions(paddleRight.getRectangle());
+		ball.edgeCollisions(hit_sound);
+		ball.paddleCollisions(paddleLeft.getRectangle(), hit_sound);
+		ball.paddleCollisions(paddleRight.getRectangle(), hit_sound);
 		ball.update();
+
+		if (IsKeyPressed(KEY_F3)) db = !db;
 
 			// Score
 			if (ball.x >= window.width) {
 				ball.center();
+				PlaySound(ding);
 				WaitTime(1);
 				leftScore += 1;
 			}
 			if (ball.x <= 0) {
 				ball.center();
+				PlaySound(ding);
 				WaitTime(1);
-				rightScore += 1;
+				rightScore += 1;	
+			}
+			if ((ball.x <= 0) || (ball.x >= window.width)) {
+				ball.center();
+				WaitTime(1);
+				ball.ballSpeedx *= -1;
 			}
 
 			// Controls
-			if (IsKeyDown(KEY_UP)) {
+			if (IsKeyDown(KEY_UP) && (paddleRight.y > 10)) {
 				paddleRight.y -= paddleRight.speed;
 			}
-			if (IsKeyDown(KEY_DOWN)) {
+			if (IsKeyDown(KEY_DOWN) && (paddleRight.y < 470)) {
 				paddleRight.y += paddleRight.speed;
 			}
-			if (IsKeyDown(KEY_W)) {
+			if (IsKeyDown(KEY_W) && (paddleLeft.y > 10)) {
 				paddleLeft.y -= paddleLeft.speed;
 			}
-			if (IsKeyDown(KEY_S)) {
+			if (IsKeyDown(KEY_S) && (paddleLeft.y < 470)) {
 				paddleLeft.y += paddleLeft.speed;
 			}
 
@@ -172,13 +189,16 @@ int main()
 
 		ball.draw();
 
+		if (db) DrawFPS(10, 10);
+
 		EndDrawing();
 
 	}
 	// De-initialize
+	UnloadSound(ding);
+	UnloadSound(hit_sound);
+	CloseAudioDevice();
 	CloseWindow();
-
-
 
 	return 0;
 }

@@ -1,0 +1,11 @@
+﻿  Application.cpp
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(75,117): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(75,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(75,63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(75,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(78,117): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(78,88): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(78,63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(78,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\Application.cpp(117,18): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Clicker.vcxproj -> C:\Users\james\Documents\GitHub\Projects\Coding\Windows_Only\C_Family\Clicker\x64\Debug\Clicker.exe
