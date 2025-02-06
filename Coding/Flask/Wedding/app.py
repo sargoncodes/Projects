@@ -58,10 +58,10 @@ def rsvp():
             flash("Successfully removed")
         else:
             flash("Error: Endpoint error")
-        db.session.commit()
+#        db.session.commit()
         return redirect(url_for("rsvp"))
         
-    return render_template("rsvp.html", values=users.query.all())
+    return render_template("rsvp.html") #, values=users.query.all()
 
 #Starts application and creates SQL db
 if __name__ == "__main__":
